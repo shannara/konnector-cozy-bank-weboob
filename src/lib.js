@@ -462,7 +462,7 @@ module.exports = lib = {
   start,
   authenticate,
   parseBankAccounts,
-  parseAllOperations,
+  parseOperations,
   fetchBalances,
   saveBalances
 }
