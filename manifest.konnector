@@ -1,0 +1,86 @@
+{
+  "version": "0.0.1",
+  "name": "Boobank",
+  "type": "konnector",
+  "language": "node",
+  "icon": "icon.png",
+  "slug": "cozy-konnector-bank-weboob",
+  "source": "git@github.com:shannara/cozy-konnector-bank-weboob.git",
+  "editor": "Shannara",
+  "vendor_link": "https://www.creditmutuel.fr",
+  "categories": ["banking"],
+  "frequency": "hourly",
+  "data_types": [
+    "bankAccounts",
+    "bankTransactions"
+  ],
+  "screenshots": [],
+  "permissions": {
+    "bank.accounts": {
+      "type": "io.cozy.bank.accounts"
+    },
+    "bank.operations": {
+      "type": "io.cozy.bank.operations"
+    },
+    "accounts": {
+      "type": "io.cozy.accounts",
+      "verbs": ["GET"]
+    },
+    "bank.balancehistories": {
+      "type": "io.cozy.bank.balancehistories"
+    },
+    "files": {
+      "type": "io.cozy.files"
+    }
+  },
+  "developer": {
+    "name": "Stanislas Leduc",
+    "url": "https://github.com/shannara"
+  },
+  "langs": ["fr", "en"],
+  "locales": {
+    "fr": {
+      "short_description": "Récupère vos opérations bancaires",
+      "long_description": "Récupère vos opérations bancaires",
+      "permissions": {
+        "bank.accounts": {
+          "description": "Utilisé pour enregistrer la liste de vos comptes bancaires"
+        },
+        "bank.operations": {
+          "description": "Utilisé pour enregistrer les transactions bancaires de vos comptes"
+        },
+        "accounts": {
+          "description": "Utilisé pour obtenir les données du compte"
+        },
+        "bank.balancehistories": {
+          "description": "Utilisé pour enregistrer l'historique du solde de vos comptes"
+        },
+        "files": {
+          "description": "Utilisé pour enregistrer les extraits de compte"
+        }
+      }
+    },
+    "en": {
+      "short_description": "Retrieves your bank operations",
+      "long_description": "Retrieves your bank operations",
+      "permissions": {
+        "bank.accounts": {
+          "description": "Required to save the list of bank accounts"
+        },
+        "bank.operations": {
+          "description": "Required to save your bank operations"
+        },
+        "accounts": {
+          "description": "Required to get the account's data"
+        },
+        "bank.balancehistories": {
+          "description": "Required to save balance histories"
+        },
+        "files": {
+          "description": "Required to save the account statements"
+        }
+      }
+    }
+  },
+  "manifest_version": "2"
+}
